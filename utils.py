@@ -16,3 +16,9 @@ def fibonacci(n):
     for i in range(2, n + 1):
         a, b = b, a + b
     return b
+
+
+def find_gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
